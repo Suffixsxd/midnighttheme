@@ -680,78 +680,78 @@ body {
 }
 
 :root {
-    /* text colors */
-    --text-0: var(--bg-4); /* text on colored elements */
-    --text-1: hsl(220, 45%, 95%); /* other normally white text */
-    --text-2: hsl(220, 25%, 70%); /* headings and important text */
-    --text-3: hsl(220, 20%, 60%); /* normal text */
-    --text-4: hsl(220, 15%, 40%); /* icon buttons and channels */
-    --text-5: hsl(220, 15%, 25%); /* muted channels/chats and timestamps */
+    /* text colors - all white for better visibility */
+    --text-0: #ffffff; /* text on colored elements */
+    --text-1: #ffffff; /* other normally white text */
+    --text-2: #ffffff; /* headings and important text */
+    --text-3: #ffffff; /* normal text */
+    --text-4: #ffffff; /* icon buttons and channels */
+    --text-5: #ffffff; /* muted channels/chats and timestamps */
 
-    /* background and dark colors */
-    --bg-1: hsl(220, 15%, 20%); /* dark buttons when clicked */
-    --bg-2: hsl(220, 15%, 16%); /* dark buttons */
-    --bg-3: hsl(220, 15%, 13%); /* spacing, secondary elements */
-    --bg-4: hsl(220, 15%, 10%); /* main background color */
-    --hover: hsla(221, 19%, 40%, 0.1); /* channels and buttons when hovered */
-    --active: hsla(220, 19%, 40%, 0.2); /* channels and buttons when clicked or selected */
-    --active-2: hsla(220, 19%, 40%, 0.3); /* extra state for transparent buttons */
-    --message-hover: hsla(230, 0%, 0%, 0.1); /* messages when hovered */
+    /* background and dark colors - using your #262626 theme */
+    --bg-1: #262626; /* dark buttons when clicked */
+    --bg-2: #262626; /* dark buttons */
+    --bg-3: #262626; /* spacing, secondary elements */
+    --bg-4: #262626; /* main background color */
+    --hover: rgba(255, 255, 255, 0.1); /* channels and buttons when hovered */
+    --active: rgba(255, 255, 255, 0.15); /* channels and buttons when clicked or selected */
+    --active-2: rgba(255, 255, 255, 0.2); /* extra state for transparent buttons */
+    --message-hover: rgba(255, 255, 255, 0.05); /* messages when hovered */
 
-    /* accent colors */
-    --accent-1: var(--blue-1); /* links and other accent text */
-    --accent-2: var(--blue-2); /* small accent elements */
-    --accent-3: var(--blue-3); /* accent buttons */
-    --accent-4: var(--blue-4); /* accent buttons when hovered */
-    --accent-5: var(--blue-5); /* accent buttons when clicked */
-    --accent-new: var(--blue-2); /* stuff that's normally red like mute/deafen buttons */
-    --mention: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 90%) 40%, transparent); /* background of messages that mention you */
-    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
-    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent); /* background of messages that reply to you */
-    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent); /* background of messages that reply to you when hovered */
+    /* accent colors - using white for better contrast */
+    --accent-1: #ffffff; /* links and other accent text */
+    --accent-2: #ffffff; /* small accent elements */
+    --accent-3: #ffffff; /* accent buttons */
+    --accent-4: #ffffff; /* accent buttons when hovered */
+    --accent-5: #ffffff; /* accent buttons when clicked */
+    --accent-new: #ffffff; /* stuff that's normally red like mute/deafen buttons */
+    --mention: rgba(255, 255, 255, 0.1); /* background of messages that mention you */
+    --mention-hover: rgba(255, 255, 255, 0.15); /* background of messages that mention you when hovered */
+    --reply: rgba(255, 255, 255, 0.08); /* background of messages that reply to you */
+    --reply-hover: rgba(255, 255, 255, 0.12); /* background of messages that reply to you when hovered */
 
-    /* status indicator colors */
-    --online: var(--green-2); /* change to #43a25a for default */
-    --dnd: var(--red-2); /* change to #d83a42 for default */
-    --idle: var(--yellow-2); /* change to #ca9654 for default */
-    --streaming: var(--purple-2); /* change to ##9147ff for default */
-    --offline: var(--text-4); /* change to #83838b for default offline color */
+    /* status indicator colors - using white theme */
+    --online: #ffffff; /* online status */
+    --dnd: #ffffff; /* do not disturb status */
+    --idle: #ffffff; /* idle status */
+    --streaming: #ffffff; /* streaming status */
+    --offline: #ffffff; /* offline status */
 
-    /* border colors */
-    --border-light: hsl(230, 20%, 40%, 0.1); /* light border color */
-    --border: hsl(230, 20%, 40%, 0.2); /* normal border color */
-    --button-border: hsl(0, 0%, 100%, 0.1); /* neutral border color of buttons */
+    /* border colors - using white with transparency */
+    --border-light: rgba(255, 255, 255, 0.1); /* light border color */
+    --border: rgba(255, 255, 255, 0.2); /* normal border color */
+    --button-border: rgba(255, 255, 255, 0.15); /* neutral border color of buttons */
 
-    /* base colors */
-    --red-1: oklch(76% 0.12 0);
-    --red-2: oklch(70% 0.12 0);
-    --red-3: oklch(64% 0.12 0);
-    --red-4: oklch(58% 0.12 0);
-    --red-5: oklch(52% 0.12 0);
+    /* base colors - using white theme */
+    --red-1: #ffffff;
+    --red-2: #ffffff;
+    --red-3: #ffffff;
+    --red-4: #ffffff;
+    --red-5: #ffffff;
 
-    --green-1: oklch(76% 0.11 170);
-    --green-2: oklch(70% 0.11 170);
-    --green-3: oklch(64% 0.11 170);
-    --green-4: oklch(58% 0.11 170);
-    --green-5: oklch(52% 0.11 160);
+    --green-1: #ffffff;
+    --green-2: #ffffff;
+    --green-3: #ffffff;
+    --green-4: #ffffff;
+    --green-5: #ffffff;
 
-    --blue-1: oklch(76% 0.1 215);
-    --blue-2: oklch(70% 0.1 215);
-    --blue-3: oklch(64% 0.1 215);
-    --blue-4: oklch(58% 0.1 215);
-    --blue-5: oklch(52% 0.1 215);
+    --blue-1: #ffffff;
+    --blue-2: #ffffff;
+    --blue-3: #ffffff;
+    --blue-4: #ffffff;
+    --blue-5: #ffffff;
 
-    --yellow-1: oklch(80% 0.11 90);
-    --yellow-2: oklch(74% 0.11 90);
-    --yellow-3: oklch(68% 0.11 90);
-    --yellow-4: oklch(62% 0.11 90);
-    --yellow-5: oklch(56% 0.11 90);
+    --yellow-1: #ffffff;
+    --yellow-2: #ffffff;
+    --yellow-3: #ffffff;
+    --yellow-4: #ffffff;
+    --yellow-5: #ffffff;
 
-    --purple-1: oklch(76% 0.11 310);
-    --purple-2: oklch(70% 0.11 310);
-    --purple-3: oklch(64% 0.11 310);
-    --purple-4: oklch(58% 0.11 310);
-    --purple-5: oklch(52% 0.11 310);
+    --purple-1: #ffffff;
+    --purple-2: #ffffff;
+    --purple-3: #ffffff;
+    --purple-4: #ffffff;
+    --purple-5: #ffffff;
 }
 
 @container root style(--colors: on) {
@@ -759,7 +759,7 @@ body {
     .visual-refresh .theme-dark:not(.custom-user-profile-theme),
     .visual-refresh .theme-light:not(.custom-user-profile-theme) {
         --activity-card-background: var(--bg-3);
-        --alert-bg: red;
+        --alert-bg: var(--bg-2);
         --autocomplete-bg: var(--bg-3);
 
         --background-accent: var(--bg-2);
@@ -767,8 +767,8 @@ body {
         --background-nested-floating: var(--bg-4);
         --background-mentioned: var(--mention);
         --background-mentioned-hover: var(--mention-hover);
-        --background-message-automod: red;
-        --background-message-automod-hover: red;
+        --background-message-automod: var(--bg-2);
+        --background-message-automod-hover: var(--bg-1);
         --background-message-highlight: var(--reply);
         --background-message-highlight-hover: var(--reply-hover);
         --background-message-hover: var(--message-hover);
@@ -778,7 +778,7 @@ body {
         --background-secondary-alt: var(--bg-3);
         --background-tertiary: var(--bg-4);
 
-        --bg-base-primary: var(--bg-4); /* screenshare window? */
+        --bg-base-primary: var(--bg-4);
         --bg-base-secondary: var(--bg-4);
         --bg-base-tertiary: var(--bg-3);
         --background-mod-subtle: var(--hover);
@@ -814,13 +814,13 @@ body {
         --border-strong: var(--border);
         --input-border: var(--border);
 
-        --button-danger-background: var(--red-3);
-        --button-danger-background-active: var(--red-5);
-        --button-danger-background-hover: var(--red-4);
-        --button-danger-background-disabled: var(--red-5);
+        --button-danger-background: var(--bg-2);
+        --button-danger-background-active: var(--bg-1);
+        --button-danger-background-hover: var(--bg-2);
+        --button-danger-background-disabled: var(--bg-3);
         --button-danger-border: var(--button-border);
 
-        --button-filled-brand-text: var(--text-0);
+        --button-filled-brand-text: var(--bg-4);
         --button-filled-brand-background: var(--accent-3);
         --button-filled-brand-background-active: var(--accent-5);
         --button-filled-brand-background-hover: var(--accent-4);
@@ -836,16 +836,16 @@ body {
         --button-filled-white-text: var(--bg-4);
 
         --button-outline-danger-background: var(--bg-2);
-        --button-outline-danger-background-active: var(--text-5);
-        --button-outline-danger-background-hover: var(--bg-1);
+        --button-outline-danger-background-active: var(--bg-1);
+        --button-outline-danger-background-hover: var(--bg-2);
         --button-outline-danger-border: var(--border-light);
         --button-outline-danger-border-active: var(--border-light);
         --button-outline-danger-border-hover: var(--border-light);
-        --button-outline-danger-text: var(--red-1);
-        --button-outline-danger-text-active: var(--red-1);
-        --button-outline-danger-text-hover: var(--red-1);
+        --button-outline-danger-text: var(--text-1);
+        --button-outline-danger-text-active: var(--text-1);
+        --button-outline-danger-text-hover: var(--text-1);
 
-        --button-outline-primary-background: red;
+        --button-outline-primary-background: var(--bg-2);
         --button-outline-primary-background-active: var(--active);
         --button-outline-primary-background-hover: var(--hover);
         --button-outline-primary-border: var(--text-5);
@@ -855,25 +855,25 @@ body {
         --button-outline-primary-text-active: var(--text-3);
         --button-outline-primary-text-hover: var(--text-3);
 
-        --button-outline-positive-background: red;
-        --button-outline-positive-background-active: var(--green-4);
-        --button-outline-positive-background-hover: var(--green-3);
-        --button-outline-positive-border: var(--green-2);
-        --button-outline-positive-border-active: var(--green-4);
-        --button-outline-positive-border-hover: var(--green-3);
+        --button-outline-positive-background: var(--bg-2);
+        --button-outline-positive-background-active: var(--bg-1);
+        --button-outline-positive-background-hover: var(--bg-2);
+        --button-outline-positive-border: var(--text-1);
+        --button-outline-positive-border-active: var(--bg-1);
+        --button-outline-positive-border-hover: var(--bg-2);
         --button-outline-positive-text: var(--text-3);
         --button-outline-positive-text-active: var(--text-0);
         --button-outline-positive-text-hover: var(--text-0);
 
-        --button-positive-background: var(--green-2);
-        --button-positive-background-active: var(--green-4);
-        --button-positive-background-hover: var(--green-3);
-        --button-positive-background-disabled: var(--green-4);
+        --button-positive-background: var(--bg-2);
+        --button-positive-background-active: var(--bg-1);
+        --button-positive-background-hover: var(--bg-2);
+        --button-positive-background-disabled: var(--bg-3);
         --button-positive-border: var(--button-border);
 
         --button-secondary-background: var(--bg-2);
-        --button-secondary-background-active: var(--text-5);
-        --button-secondary-background-hover: var(--bg-1);
+        --button-secondary-background-active: var(--bg-1);
+        --button-secondary-background-hover: var(--bg-2);
         --button-secondary-background-disabled: var(--bg-3);
         --button-secondary-text: var(--text-3);
 
@@ -884,8 +884,8 @@ body {
 
         --redesign-button-secondary-text: var(--text-3);
 
-        --polls-voted-fill: color-mix(in hsl, var(--accent-2), transparent 90%);
-        --polls-victor-fill: color-mix(in hsl, var(--green-2), transparent 90%);
+        --polls-voted-fill: var(--accent-2);
+        --polls-victor-fill: var(--text-1);
 
         --card-primary-bg: var(--bg-3);
         --card-secondary-bg: var(--bg-2);
@@ -903,58 +903,58 @@ body {
         --icon-secondary: var(--text-4);
         --icon-tertiary: var(--text-4);
 
-        --info-danger-background: red;
-        --info-danger-text: red;
-        --info-help-background: color-mix(in hsl, var(--blue-2), transparent 80%);
-        --info-help-foreground: var(--blue-1);
-        --info-help-text: var(--blue-1);
-        --info-positive-background: color-mix(in hsl, var(--yellow-1), transparent 80%);
-        --info-positive-text: var(--green-1);
-        --info-warning-background: color-mix(in hsl, var(--yellow-2), transparent 80%);
-        --info-warning-text: var(--yellow-1);
+        --info-danger-background: var(--bg-2);
+        --info-danger-text: var(--text-1);
+        --info-help-background: var(--bg-2);
+        --info-help-foreground: var(--text-1);
+        --info-help-text: var(--text-1);
+        --info-positive-background: var(--bg-2);
+        --info-positive-text: var(--text-1);
+        --info-warning-background: var(--bg-2);
+        --info-warning-text: var(--text-1);
 
         --text-brand: var(--accent-1);
-        --text-danger: var(--red-1);
+        --text-danger: var(--text-1);
         --text-link: var(--accent-1);
-        --text-link-low-saturation: red;
+        --text-link-low-saturation: var(--text-1);
         --text-low-contrast: var(--text-4);
-        --text-message-preview-low-sat: red;
+        --text-message-preview-low-sat: var(--text-1);
         --text-muted: var(--text-5);
         --text-muted-on-default: var(--text-4);
         --text-normal: var(--text-3);
-        --text-positive: var(--green-1);
+        --text-positive: var(--text-1);
         --text-primary: var(--text-3);
         --text-secondary: var(--text-4);
-        --text-warning: var(--yellow-1);
+        --text-warning: var(--text-1);
         --text-default: var(--text-3);
-        --text-feedback-critical: var(--red-1);
-        --text-feedback-positive: var(--green-1);
-        --text-feedback-info: red;
-        --text-feedback-warning: var(--yellow-1);
+        --text-feedback-critical: var(--text-1);
+        --text-feedback-positive: var(--text-1);
+        --text-feedback-info: var(--text-1);
+        --text-feedback-warning: var(--text-1);
         --text-tertiary: var(--text-4);
 
         --user-profile-overlay-background: var(--bg-4);
         --user-profile-overlay-background-hover: var(--bg-2);
 
-        --status-danger: var(--red-2);
-        --status-danger-background: var(--red-3);
-        --status-danger-text: var(--white);
-        --status-dnd: var(--dnd); /* server profiles */
-        --status-idle: var(--idle);
-        --status-offline: var(--offline);
-        --status-online: var(--online);
-        --status-positive: var(--green-2);
-        --status-positive-background: var(--green-2);
-        --status-positive-text: var(--white);
-        --status-speaking: var(--green-2);
-        --status-warning: var(--yellow-2);
-        --status-warning-background: red;
-        --status-warning-text: var(--black);
+        --status-danger: var(--text-1);
+        --status-danger-background: var(--bg-2);
+        --status-danger-text: var(--bg-4);
+        --status-dnd: var(--text-1);
+        --status-idle: var(--text-1);
+        --status-offline: var(--text-1);
+        --status-online: var(--text-1);
+        --status-positive: var(--text-1);
+        --status-positive-background: var(--text-1);
+        --status-positive-text: var(--bg-4);
+        --status-speaking: var(--text-1);
+        --status-warning: var(--text-1);
+        --status-warning-background: var(--bg-2);
+        --status-warning-text: var(--bg-4);
 
-        --background-feedback-critical: color-mix(in hsl, var(--red-2), transparent 80%);
-        --background-feedback-info: color-mix(in hsl, var(--blue-2), transparent 80%);
-        --background-feedback-positive: color-mix(in hsl, var(--green-2), transparent 80%);
-        --background-feedback-warning: color-mix(in hsl, var(--yellow-2), transparent 80%);
+        --background-feedback-critical: var(--bg-2);
+        --background-feedback-info: var(--bg-2);
+        --background-feedback-positive: var(--bg-2);
+        --background-feedback-warning: var(--bg-2);
 
         --interactive-normal: var(--text-4);
         --interactive-hover: var(--text-3);
@@ -962,12 +962,12 @@ body {
         --interactive-muted: var(--text-5);
 
         --mention-foreground: var(--accent-1);
-        --mention-background: color-mix(in hsl, var(--accent-2), transparent 90%);
+        --mention-background: var(--mention);
 
         --channel-text-area-placeholder: var(--text-5);
 
         --message-reacted-text: var(--text-2);
-        --message-reacted-background: color-mix(in hsl, var(--accent-2), transparent 80%);
+        --message-reacted-background: var(--bg-2);
 
         --custom-channel-members-bg: var(--bg-4);
 
@@ -986,10 +986,10 @@ body {
         --brand-500: var(--accent-2);
         --blurple-50: var(--accent-2);
 
-        --red-400: var(--red-2);
-        --red-500: var(--red-3);
+        --red-400: var(--text-1);
+        --red-500: var(--text-1);
 
-        --green-360: var(--green-2); /* seems to be mostly used by vencord plugins */
+        --green-360: var(--text-1);
         --primary-400: var(--text-4);
 
         --deprecated-text-input-bg: var(--bg-3);
@@ -997,44 +997,23 @@ body {
 
         --background-code: var(--bg-3);
 
-        /* --control-background-active-active: var(--green-new-62);
-        --control-background-active-default: var(--green-new-50);
-        --control-background-active-hover: var(--green-new-55);
-        --control-background-active-loading: var(--green-new-50); */
-        --control-background-critical-primary-active: var(--red-5);
-        --control-background-critical-primary-default: var(--red-3);
-        --control-background-critical-primary-hover: var(--red-4);
-        --control-background-critical-primary-loading: var(--red-3);
-        --control-background-critical-secondary-active: var(--text-5);
+        --control-background-critical-primary-active: var(--bg-1);
+        --control-background-critical-primary-default: var(--bg-2);
+        --control-background-critical-primary-hover: var(--bg-2);
+        --control-background-critical-primary-loading: var(--bg-2);
+        --control-background-critical-secondary-active: var(--bg-1);
         --control-background-critical-secondary-default: var(--bg-2);
-        --control-background-critical-secondary-hover: var(--bg-1);
+        --control-background-critical-secondary-hover: var(--bg-2);
         --control-background-critical-secondary-loading: var(--bg-2);
-        /* --control-background-expressive-active: var(--neutral-10);
-        --control-background-expressive-default: var(--neutral-1);
-        --control-background-expressive-hover: var(--neutral-1);
-        --control-background-expressive-loading: var(--neutral-1);
-        --control-background-icon-only-active: hsl(var(--opacity-20-hsl) / 0.2);
-        --control-background-icon-only-hover: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
-        --control-background-overlay-primary-active: var(--neutral-17);
-        --control-background-overlay-primary-default: var(--neutral-1);
-        --control-background-overlay-primary-hover: var(--neutral-9);
-        --control-background-overlay-primary-loading: var(--neutral-1);
-        --control-background-overlay-secondary-active: hsl(var(--opacity-black-48-hsl) / 0.47843137254901963);
-        --control-background-overlay-secondary-default: hsl(var(--opacity-black-52-hsl) / 0.5215686274509804);
-        --control-background-overlay-secondary-hover: hsl(var(--opacity-black-64-hsl) / 0.6392156862745098);
-        --control-background-overlay-secondary-loading: hsl(var(--opacity-black-52-hsl) / 0.5215686274509804); */
-        --control-background-primary-active: var(--accent-5);
-        --control-background-primary-default: var(--accent-3);
-        --control-background-primary-hover: var(--accent-4);
-        --control-background-primary-loading: var(--accent-3);
-        --control-background-secondary-active: var(--text-5);
+        --control-background-primary-active: var(--bg-1);
+        --control-background-primary-default: var(--bg-2);
+        --control-background-primary-hover: var(--bg-2);
+        --control-background-primary-loading: var(--bg-2);
+        --control-background-secondary-active: var(--bg-1);
         --control-background-secondary-default: var(--bg-2);
-        --control-background-secondary-hover: var(--bg-1);
+        --control-background-secondary-hover: var(--bg-2);
         --control-background-secondary-loading: var(--bg-2);
-        /* --control-border-active-active: hsl(var(--opacity-white-8-hsl) / 0.0784313725490196);
-        --control-border-active-default: hsl(var(--opacity-white-8-hsl) / 0.0784313725490196);
-        --control-border-active-hover: hsl(var(--opacity-white-8-hsl) / 0.0784313725490196);
-        --control-border-active-loading: hsl(var(--opacity-white-8-hsl) / 0.0784313725490196); */
+
         --control-border-critical-primary-active: var(--button-border);
         --control-border-critical-primary-default: var(--button-border);
         --control-border-critical-primary-hover: var(--button-border);
@@ -1043,20 +1022,6 @@ body {
         --control-border-critical-secondary-default: var(--border-light);
         --control-border-critical-secondary-hover: var(--border-light);
         --control-border-critical-secondary-loading: var(--border-light);
-        /* --control-border-expressive-active: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-        --control-border-expressive-default: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-        --control-border-expressive-hover: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-        --control-border-expressive-loading: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-        --control-border-icon-only-active: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
-        --control-border-icon-only-hover: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
-        --control-border-overlay-primary-active: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-        --control-border-overlay-primary-default: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-        --control-border-overlay-primary-hover: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-        --control-border-overlay-primary-loading: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-        --control-border-overlay-secondary-active: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
-        --control-border-overlay-secondary-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
-        --control-border-overlay-secondary-hover: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
-        --control-border-overlay-secondary-loading: hsl(var(--opacity-4-hsl) / 0.0392156862745098); */
         --control-border-primary-active: var(--button-border);
         --control-border-primary-default: var(--button-border);
         --control-border-primary-hover: var(--button-border);
@@ -1065,68 +1030,15 @@ body {
         --control-border-secondary-default: var(--border-light);
         --control-border-secondary-hover: var(--border-light);
         --control-border-secondary-loading: var(--border-light);
-        /*--control-brand-foreground: var(--brand-360);
-        --control-brand-foreground-new: var(--brand-360);
-         --control-icon-active-active: var(--white);
-        --control-icon-active-default: var(--white);
-        --control-icon-active-hover: var(--white);
-        --control-icon-active-loading: var(--white);
-        --control-icon-critical-primary-active: var(--white);
-        --control-icon-critical-primary-default: var(--white);
-        --control-icon-critical-primary-hover: var(--white);
-        --control-icon-critical-primary-loading: var(--white);
-        --control-icon-critical-secondary-active: var(--red-new-22);
-        --control-icon-critical-secondary-default: var(--red-new-22);
-        --control-icon-critical-secondary-hover: var(--red-new-22);
-        --control-icon-critical-secondary-loading: var(--red-new-22);
-        --control-icon-expressive-active: var(--black);
-        --control-icon-expressive-default: var(--black);
-        --control-icon-expressive-hover: var(--black);
-        --control-icon-expressive-loading: var(--black);
-        --control-icon-icon-only-active: var(--neutral-1);
-        --control-icon-icon-only-default: var(--neutral-16);
-        --control-icon-icon-only-hover: var(--neutral-1);
-        --control-icon-icon-only-loading: var(--neutral-1);
-        --control-icon-overlay-primary-active: var(--black);
-        --control-icon-overlay-primary-default: var(--black);
-        --control-icon-overlay-primary-hover: var(--black);
-        --control-icon-overlay-primary-loading: var(--black);
-        --control-icon-overlay-secondary-active: var(--white);
-        --control-icon-overlay-secondary-default: var(--white);
-        --control-icon-overlay-secondary-hover: var(--white);
-        --control-icon-overlay-secondary-loading: var(--white);
-        --control-icon-primary-active: var(--white);
-        --control-icon-primary-default: var(--white);
-        --control-icon-primary-hover: var(--white);
-        --control-icon-primary-loading: var(--white);
-        --control-icon-secondary-active: var(--neutral-1);
-        --control-icon-secondary-default: var(--neutral-1);
-        --control-icon-secondary-hover: var(--neutral-1);
-        --control-icon-secondary-loading: var(--neutral-1);
-        --control-text-active-active: var(--white);
-        --control-text-active-default: var(--white);
-        --control-text-active-hover: var(--white);
-        --control-text-active-loading: var(--white);*/
+
         --control-text-critical-primary-active: var(--text-0);
         --control-text-critical-primary-default: var(--text-0);
         --control-text-critical-primary-hover: var(--text-0);
         --control-text-critical-primary-loading: var(--text-0);
-        --control-text-critical-secondary-active: var(--red-2);
-        --control-text-critical-secondary-default: var(--red-2);
-        --control-text-critical-secondary-hover: var(--red-2);
-        --control-text-critical-secondary-loading: var(--red-2);
-        /* --control-text-expressive-active: var(--black);
-        --control-text-expressive-default: var(--black);
-        --control-text-expressive-hover: var(--black);
-        --control-text-expressive-loading: var(--black);
-        --control-text-overlay-primary-active: var(--black);
-        --control-text-overlay-primary-default: var(--black);
-        --control-text-overlay-primary-hover: var(--black);
-        --control-text-overlay-primary-loading: var(--black);
-        --control-text-overlay-secondary-active: var(--white);
-        --control-text-overlay-secondary-default: var(--white);
-        --control-text-overlay-secondary-hover: var(--white);
-        --control-text-overlay-secondary-loading: var(--white); */
+        --control-text-critical-secondary-active: var(--text-1);
+        --control-text-critical-secondary-default: var(--text-1);
+        --control-text-critical-secondary-hover: var(--text-1);
+        --control-text-critical-secondary-loading: var(--text-1);
         --control-text-primary-active: var(--text-0);
         --control-text-primary-default: var(--text-0);
         --control-text-primary-hover: var(--text-0);
@@ -1315,7 +1227,7 @@ body {
         }
 
         .colorable_f1ceac.white_f1ceac /* vc icon button nub when white */ {
-            background-color: var(--primary-130);
+            background-color: var(--text-1);
             color: var(--bg-4);
         }
 
@@ -1335,10 +1247,10 @@ body {
         }
 
         .container__37e49 .button__67645.redGlow__67645 /* user panel button backgrounds*/ {
-            background-color: color-mix(in hsl, var(--accent-new), transparent 90%);
+            background-color: var(--accent-new);
         }
         .container__37e49 .button__67645.enabled__67645.redGlow__67645:hover /* user panel button backgrounds hover */ {
-            background-color: color-mix(in hsl, var(--accent-new), transparent 80%);
+            background-color: var(--accent-new);
         }
 
         .divider__5126c /* unread divider */ {
@@ -1360,14 +1272,14 @@ body {
         }
 
         .updateIconForeground__49676 /* update button */ {
-            fill: var(--green-1);
+            fill: var(--text-1);
         }
 
         .colorable_f1ceac.red_f1ceac:hover /* vc disconnect button hover */ {
-            background-color: var(--red-4);
+            background-color: var(--bg-2);
         }
         .button_f7ecac.dangerous_f7ecac:hover /* image attachment delete button hover in chat bar */ {
-            color: var(--red-4);
+            color: var(--text-1);
         }
         .contentWrapper__08434 ::-webkit-scrollbar-thumb /* gif picker scrollbar */ {
             background-color: var(--bg-1);
@@ -1404,52 +1316,52 @@ body {
             background: var(--background-message-highlight);
         }
 
-        /* status indicators */
+        /* status indicators - all white */
         rect[fill='#82838b'] {
-            fill: var(--offline);
+            fill: var(--text-1);
         }
         .status_a423bd[style='background-color: rgb(130, 131, 139);'] {
-            background-color: var(--offline) !important;
+            background-color: var(--text-1) !important;
         }
         rect[fill='#43a25a'],
         path[fill='#43a25a'] /* status activity icon */,
         path[fill='var(--status-positive)'] /* status activity icon */,
         .vc-platform-indicator > svg[fill="#43a25a"] {
-            fill: var(--online);
+            fill: var(--text-1);
         }
         .status_a423bd[style='background-color: rgb(67, 162, 90);'] {
-            background-color: var(--online) !important;
+            background-color: var(--text-1) !important;
         }
         rect[fill='#ca9654'],
         .vc-platform-indicator > svg[fill='#ca9654'] {
-            fill: var(--idle);
+            fill: var(--text-1);
         }
         .status_a423bd[style='background-color: rgb(202, 150, 84);'] {
-            background-color: var(--idle) !important;
+            background-color: var(--text-1) !important;
         }
         rect[fill='#d83a42'],
         .vc-platform-indicator > svg[fill='#d83a42'] {
-            fill: var(--dnd);
+            fill: var(--text-1);
         }
         .status_a423bd[style='background-color: rgb(216, 58, 66);'] {
-            background-color: var(--dnd) !important;
+            background-color: var(--text-1) !important;
         }
         rect[fill='#9147ff'] {
-            fill: var(--streaming);
+            fill: var(--text-1);
         }
         div[style='display: flex; justify-content: center; align-items: center; border-radius: 5px; background-color: rgb(67, 162, 90); height: 10px; width: 25px;'] {
-            background-color: var(--online) !important;
+            background-color: var(--text-1) !important;
         }
 
         /* fix radio bar button colors */
         .radioBar__001a7[style='--radio-bar-accent-color: var(--yellow-360); padding: 10px;'] {
-            --radio-bar-accent-color: var(--yellow-2) !important;
+            --radio-bar-accent-color: var(--text-1) !important;
         }
         .radioBar__001a7[style='--radio-bar-accent-color: var(--green-360); padding: 10px;'] {
-            --radio-bar-accent-color: var(--green-2) !important;
+            --radio-bar-accent-color: var(--text-1) !important;
         }
         .radioBar__001a7[style='--radio-bar-accent-color: var(--red-400); padding: 10px;'] {
-            --radio-bar-accent-color: var(--red-2) !important;
+            --radio-bar-accent-color: var(--text-1) !important;
         }
 
         #vc-spotify-player {
